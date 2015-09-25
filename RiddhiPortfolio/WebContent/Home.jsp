@@ -89,6 +89,7 @@
 	.footerSegmentLast {
 		float:left;
 		width:80%;
+		height:30px;
 		margin:0% 10% 0px 10%;
 	}
 	
@@ -97,8 +98,14 @@
 		width:50%;
 		text-align:left;
 		font-family: "ubuntu";
-		font-size:16px;
+		font-size:14px;
 		padding-top:5px;
+		letter-spacing:2px;
+	}
+
+	.topSpace {
+		position:relative;
+		top:3px;
 	}
 
 	.footerSegmentLast img {
@@ -158,6 +165,11 @@
 		font-family: "varela";
 		font-size:14px;
 		color:white;
+		transition: color 1s;
+		-moz-transition: color 1s;
+		-webkit-transition: color 1s;
+		-o-transition: color 1s;
+		
 	}
 	
 	#baseHeaderRight > nav > ul > li > a:hover {
@@ -169,6 +181,62 @@
 		width:100%;
 		clear:left;
 		height:55%;
+	}
+	
+	#baseBodyTop {
+		float:left;
+		width:60%;
+		height:15%;
+		margin:7% 40% 0px 0px;
+		font-family:"openSan";
+		font-size:30px;
+		color:rgba(0, 155, 200, 1);
+		color:#8AE429;
+		letter-spacing: 2px;
+		text-align:center;
+		font-weight:bold;
+	}
+	
+	#baseBodyBottom {
+		float:left;
+		width:46%;
+		height:26px;
+		margin-left:12%;
+		padding:10px 0px 0px 0px;
+		text-align:center;
+		border:1px solid green;
+		background-color:white;
+		font-family:"ubuntu";
+		font-size:16px;
+		font-weight:bold;
+		color:rgba(0,0,0,1);
+	}
+	
+	#baseBodyRight {
+		float:right;
+		clear:both;
+		height:26px;
+		font-family:"ubuntu";
+		color:white;
+		font-size:16px;
+		font-weight:bold;
+		width:35%;
+		margin-top:5.6%;
+		text-shadow:none;
+		transition: color 1s;
+		-moz-transition: color 1s;
+		-webkit-transition: color 1s;
+		-o-transition: color 1s;
+		cursor:pointer;
+	}
+	
+	#baseBodyRight:hover {
+		color:rgb(100,100,100);
+		text-shadow:0px 1px 1px rgba(0,0,0,1);
+	}
+	
+	.italic {
+		font-style: italic;
 	}
 	
 </style>
@@ -197,7 +265,7 @@
 			</header>
 			<div id="baseBody">
 				<a id="baseBodyTop">BUILD BEAUTIFULLY. AESTHETICALLY.</a>
-				<a id="baseBodyBottom">PROVIDING FLEXIBLE WEB DEVELOPMENT SERVICES AT XYZ CORP.</a>
+				<a id="baseBodyBottom">PROVIDING FLEXIBLE WEB DEVELOPMENT SERVICES AT <span class="italic">XYZ CORP.</span></a>
 				<a id="baseBodyRight">Learn More</a>
 			</div>
 		</div>
@@ -206,19 +274,19 @@
 					<a class="footerSegmentHeader" style="color:white;">What we do</a>
 					<a class="footerSegmentUnder" style="color:white;">Details about our services</a>
 					<hr class="footerDivider"/>
-					<a class="footerSegmentLast"><span>EXPLORE</span><span><img src="images/findMore.png"></span></a>
+					<a class="footerSegmentLast"><span class="topSpace">EXPLORE</span><span><img src="images/findMore.png"></span></a>
 				</div>
 				<div id="segment-2" class="footerSegment">
 					<a class="footerSegmentHeader" style="color:black;text-shadow:none;">About XYZ CORP.</a>
 					<a class="footerSegmentUnder" style="color:black;;text-shadow:none;">Know our designers' and developers' team</a>
 					<hr class="footerDivider"/>
-					<a class="footerSegmentLast"><span>ABOUT US</span><span><img src="images/findMore.png"></span></a>
+					<a class="footerSegmentLast"><span class="topSpace">ABOUT US</span><span><img src="images/findMore.png"></span></a>
 				</div>
 				<div id="segment-3" class="footerSegment">
 					<a class="footerSegmentHeader" style="color:white;">Portfolio</a>
 					<a class="footerSegmentUnder" style="color:white;">Browse our latest project</a>
 					<hr class="footerDivider"/>
-					<a class="footerSegmentLast"><span>ENTER GALLERY</span><span><img src="images/findMore.png"></span></a>
+					<a class="footerSegmentLast"><span class="topSpace">ENTER GALLERY</span><span><img src="images/findMore.png"></span></a>
 				</div>
 			</footer>
 	</div>
